@@ -1,13 +1,13 @@
-<h1>The Burger Cafe Menu</h1>
-Waiting to be devoured!
+<h1>Welcome to the Burger Cafe Menu</h1>
+These are the burgers waiting to be devoured by your ravenous hunger!
 {{#each burgerData}}
   <pre>
     {{#if this.devoured}}
-      <span>             <span>This burger was eaten: {{burger_name}}
+      <span>             <span>You ate: {{burger_name}}
     {{else}}
       {{burger_name}} 
       <form action="/update/{{ id }}" method="post">
-      <button type="submit">Devour it!</button>
+      <button type="submit">CONQUER THE HUNGER AND EAT THIS BURGER!</button>
     </form> 
     {{/if}}  
   </pre>
@@ -17,5 +17,5 @@ Waiting to be devoured!
 
 <form action="/create" method="post">
   <textarea name="item" rows="2" cols="30"></textarea>
-  <button type="submit">Enter Your Burger</button>
+  <button type="submit">Enter A New Burger</button>
 <form>

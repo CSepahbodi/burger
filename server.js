@@ -20,11 +20,5 @@ var routes = require('./controllers/burgers_controller.js');
 app.use('/', routes);
 
 app.listen(PORT, function() {
-  console.log("Listening at %s", PORT);
+  console.log("Listening at Port: ", PORT);
 });
-
-//used to test res.send
-// app.get('/', function (req, res) {
-//         console.log('Hello World');
-// });
-// connection.end();
