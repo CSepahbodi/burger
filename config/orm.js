@@ -27,8 +27,3 @@ var orm = {
 };
 
 module.exports = orm;
-
-//used to test the orm functions
-// orm.addBurger("cheese");
-// orm.eatBurger(29);
-// orm.showBurgers();
