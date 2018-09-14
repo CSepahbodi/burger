@@ -1,5 +1,3 @@
-//Main view for the user interface with heading and populating the burgers available to eat.
-
 <h1>Welcome to the Burger Cafe Menu</h1>
 These are the burgers waiting to be devoured by your ravenous hunger!
 {{#each burgerData}}
@@ -14,8 +12,6 @@ These are the burgers waiting to be devoured by your ravenous hunger!
     {{/if}}  
   </pre>
 {{/each}}
-
-//form to enter a new burger into the system to be conquered. 
 
 <form action="/create" method="post">
   <textarea name="item" rows="2" cols="30"></textarea>
