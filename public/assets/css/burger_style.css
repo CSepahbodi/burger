@@ -1,7 +1,11 @@
 .title {
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Courier', sans-serif;
 }
 
 p {
 	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: yellow;
 }
