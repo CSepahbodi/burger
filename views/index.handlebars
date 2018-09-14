@@ -1,3 +1,5 @@
+//Main view for the user interface with heading and populating the burgers available to eat.
+
 <h1>Welcome to the Burger Cafe Menu</h1>
 These are the burgers waiting to be devoured by your ravenous hunger!
 {{#each burgerData}}
@@ -7,13 +9,16 @@ These are the burgers waiting to be devoured by your ravenous hunger!
     {{else}}
       {{burger_name}} 
       <form action="/update/{{ id }}" method="post">
+
+//submit button after each burger to eat said item on the menu.
+
       <button type="submit">CONQUER THE HUNGER AND EAT THIS BURGER!</button>
     </form> 
     {{/if}}  
   </pre>
 {{/each}}
 
-
+//form to enter a new burger into the system to be conquered. 
 
 <form action="/create" method="post">
   <textarea name="item" rows="2" cols="30"></textarea>
